@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8709784E-50A7-4860-BFD7-7B9AE037DCB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HiTechOrderSystem</RootNamespace>
+    <AssemblyName>HiTechOrderSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\Author.cs" />
+    <Compile Include="Business\Client.cs" />
+    <Compile Include="Business\Employee.cs" />
+    <Compile Include="Business\Inventory.cs" />
+    <Compile Include="Business\Order.cs" />
+    <Compile Include="Business\Product.cs" />
+    <Compile Include="Business\User.cs" />
+    <Compile Include="DataAccess\AuthorDA.cs" />
+    <Compile Include="DataAccess\ClientDA.cs" />
+    <Compile Include="DataAccess\EmployeeDA.cs" />
+    <Compile Include="DataAccess\InventoryDA.cs" />
+    <Compile Include="DataAccess\OrderDA.cs" />
+    <Compile Include="DataAccess\ProductDA.cs" />
+    <Compile Include="DataAccess\UserDA.cs" />
+    <Compile Include="GUI\FormClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormClient.Designer.cs">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormEmployeeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormEmployeeUser.Designer.cs">
+      <DependentUpon>FormEmployeeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormOrders.Designer.cs">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <EmbeddedResource Include="GUI\FormClient.resx">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormEmployeeUser.resx">
+      <DependentUpon>FormEmployeeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\Authors.dat" />
+    <None Include="bin\Debug\Clients.dat" />
+    <None Include="bin\Debug\ClientTemp.dat" />
+    <None Include="bin\Debug\Employees.dat" />
+    <None Include="bin\Debug\EmployeeTemp.dat" />
+    <None Include="bin\Debug\HiTechOrderSystem.exe.config" />
+    <None Include="bin\Debug\Orders.bin" />
+    <None Include="bin\Debug\Products.dat" />
+    <None Include="bin\Debug\Users.dat" />
+    <None Include="bin\Debug\UserTemp.dat" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\HiTechOrderSystem.exe" />
+    <Content Include="bin\Debug\HiTechOrderSystem.pdb" />
+    <Content Include="bin\Debug\XMLClients.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

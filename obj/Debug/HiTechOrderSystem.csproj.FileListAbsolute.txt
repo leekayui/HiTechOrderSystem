@@ -1,0 +1,13 @@
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\bin\Debug\HiTechOrderSystem.exe.config
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\bin\Debug\HiTechOrderSystem.exe
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\bin\Debug\HiTechOrderSystem.pdb
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.Properties.Resources.resources
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.csproj.GenerateResource.cache
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.csproj.CoreCompileInputs.cache
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.exe
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.pdb
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.GUI.FormEmployeeUser.resources
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.GUI.FormLogIn.resources
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.GUI.FormClient.resources
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.GUI.FormProduct.resources
+C:\CT2\HiTechOrderSystem\HiTechOrderSystem\obj\Debug\HiTechOrderSystem.GUI.FormOrders.resources

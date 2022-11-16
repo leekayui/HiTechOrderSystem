@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clients>
+  <Client ClientID="1">
+    <ClientName>Lasalle</ClientName>
+    <Street>1400</Street>
+    <City>Montreal</City>
+    <Postcode>H8N 0Z6</Postcode>
+    <PhoneNumber>(438) 888-8888</PhoneNumber>
+    <FaxNumber>4388888888</FaxNumber>
+    <CreditLimit>9999</CreditLimit>
+    <Type>College</Type>
+  </Client>
+  <Client ClientID="1234">
+    <ClientName>Lasalle</ClientName>
+    <Street>555</Street>
+    <City>Montreal</City>
+    <Postcode>H8N 1A1</Postcode>
+    <PhoneNumber>(555) 555-5555</PhoneNumber>
+    <FaxNumber>555555555</FaxNumber>
+    <CreditLimit>55555</CreditLimit>
+    <Type>College</Type>
+  </Client>
+</Clients>
